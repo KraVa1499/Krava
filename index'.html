@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сайт Богдана</title>
+</head><link rel="stylesheet" href="style.css">
+<body>
+    <h1>Привіт! Це моя перша вебсторінка</h1>
+    <p>Цей сайт створений мною для навчання</p>
+
+    <h2>Мої інтереси</h2>
+    <ul>
+        <li>Програмування</li>
+        <li>Ігри</li>
+        <li>Їжа</li>
+    </ul>
+
+    <h2>Моє фото</h2>
+    <img src="https://via.placeholder.com/300" alt="https://www.interfax.ru/ftproot/photos/photostory/2022/04/29/week/week7_1100.jpg" width="300">
+
+    <h2>Мої улюблені сайти</h2>
+    <ol>
+        <li><a href="https://google.com" target="_blank">Google</a></li>
+        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+    </ol>
+    <h2>Залиште повідомлення</h2>
+<form action="#" method="post">
+    <label for="name">Ім'я:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Повідомлення:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+    <input type="submit" value="Надіслати">
+</form>
+<h2>Мої кнопки</h2>
+<button class="btn">Я Кнопка</button>
+<button class="btn">Я інша кнопка</button>
+</body>
+</html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій адаптивний сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<button class="feedback-btn">Залишити відгук</button>
+
+<div class="feedback-form" style="display: none;">
+    <h3>Ваш відгук</h3>
+    <form action="">
+        <textarea placeholder="Напишіть ваш відгук..." rows="4" cols="50"></textarea><br>
+        <button type="submit">Відправити</button>
+    </form>
+</div>
+<script>
+    const feedbackButton = document.querySelector('.feedback-btn');
+    const feedbackForm = document.querySelector('.feedback-form');
+
+    feedbackButton.addEventListener('click', function() {
+        feedbackForm.style.display = feedbackForm.style.display === 'none' ? 'block' : 'none';
+    });
+</script>
+<div class="animated-element">
+    <h2>Це анімація</h2>
+    <p>пара па пам пам </p>
+</div>
+<script>
+    const animatedElement = document.querySelector('.animated-element');
+
+    window.addEventListener('scroll', function() {
+        const rect = animatedElement.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            animatedElement.classList.add('animate');
+        }
+    });
+</script>
+<button class="theme-toggle">Змінити тему</button>
+<script>
+    const themeToggleButton = document.querySelector('.theme-toggle');
+    const body = document.body;
+
+    themeToggleButton.addEventListener('click', function() {
+        body.classList.toggle('dark-theme');
+    });
+</script>
+<button class="modal-btn">Спливаюче вікно</button>
+
+<div class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Тіпо інфа!</h2>
+        <p>тут написано що доставка не Безкоштовна .</p>
+    </div>
+</div>
+<script>
+    const modalBtn = document.querySelector('.modal-btn');
+    const modal = document.querySelector('.modal');
+    const closeBtn = document.querySelector('.close-btn');
+
+    modalBtn.addEventListener('click', function() {
+        modal.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>

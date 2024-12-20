@@ -1,0 +1,272 @@
+body {
+    background-color: #f0f8ff; /* Ніжно-блакитний фон */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Стиль заголовків */
+h1 {
+    color: #0073e6; /* Синій колір */
+    text-align: center;
+}
+
+h2 {
+    color: #003a74ce; /* чорний */
+}
+
+/* Стиль для списків */
+ul, ol {
+    background-color: #ffffff; /* Білий фон */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Стиль для зображень */
+img {
+    display: block;
+    margin: 20px auto; /* Вирівнювання по центру */
+    border: 3px solid #0073e6;
+    border-radius: 10px;
+}
+
+/* Посилання */
+a {
+    color: #00509e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6600; /* Помаранчевий під час наведення */
+}
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    font-size: 16px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+/* Клас для всіх кнопок */
+button {
+    background-color: #4CAF50; /* Зелене тло */
+    color: white; /* Білий текст */
+    padding: 15px 32px; /* Відстань навколо тексту */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none; /* Забирає стандартний контур кнопки */
+    transition: background-color 0.3s, transform 0.3s; /* Анімація */
+}
+
+button:hover {
+    background-color: #45a049; /* Зміна кольору при наведенні */
+    transform: scale(1.1); /* Збільшення кнопки при наведенні */
+}
+/* Основні стилі (для великих екранів) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Адаптивність для планшетів і менших екранів */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%; /* Кнопки стають ширшими */
+    }
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+}
+.feedback-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.animated-element {
+    opacity: 0;
+    transform: translateY(100px); /* Початкове положення знизу */
+    transition: opacity 1s, transform 1s;
+}
+
+/* Клас, який додається при прокручуванні */
+.animate {
+    opacity: 1;
+    transform: translateY(0); /* Кінець анімації */
+}/* Світла тема (за замовчуванням) */
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Темна тема */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+button.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.theme-toggle:hover {
+    background-color: #45a049;
+}
+.parallax {
+    background-image: url('https://via.placeholder.com/1600x800');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.parallax h2 {
+    font-size: 2.5em;
+}
+
+.parallax p {
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;  /* Better mobile compatibility */
+        padding: 50px 0;
+    }
+    
+    .parallax h2 {
+        font-size: 2em;
+    }
+}
+
+@media (hover: none) {
+    .parallax {
+        background-attachment: scroll;  /* For devices that don't support fixed attachment */
+    }
+}
+/* Стиль для модального вікна */
+.modal {
+    display: none; /* За замовчуванням воно приховане */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
